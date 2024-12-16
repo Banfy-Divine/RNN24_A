@@ -66,7 +66,7 @@ function App() {
     const targetLanguage = languages.find(l => l.name === languageInput);
 
     if (targetLanguage) {
-      // Check if color matches (case-insensitive)
+      // Check if color matches
       if (targetLanguage.color.toLowerCase() === colorInput.toLowerCase()) {
         playSuccessSound();
         recordAttempt(languageInput, colorInput, 'success');
